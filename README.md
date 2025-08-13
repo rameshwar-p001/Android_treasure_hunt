@@ -18,18 +18,8 @@ A simple Android game built using Kotlin and Jetpack Compose where the player sa
 
 - Material Design: Material 3
 
-  Randomization: kotlin.random.Random
+- Randomization: kotlin.random.Random
 
-## 📂 Project Structure
-'''bash 
-MainActivity.kt
- ├── onCreate() → Sets up the UI with Day6() composable
- ├── Day6() → Main game screen
-     ├── Treasure counter
-     ├── Direction display
-     ├── Feedback message (Treasure / Storm)
-     ├── Buttons for East, West, North, South navigation
-  '''bash
 ## 📸 Screenshots
 <img width="869" height="996" alt="image" src="https://github.com/user-attachments/assets/ba36439a-60ae-4fd1-947d-12fc0f6d64de" />
 
