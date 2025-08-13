@@ -47,5 +47,5 @@ Run the app on an emulator or physical device with Android 5.0+ (API 21+).
 
 - Your treasure count and direction update in real-time.
 
-📄 License
+## 📄 License
 This project is open-source. You can modify and use it for learning purposes.
