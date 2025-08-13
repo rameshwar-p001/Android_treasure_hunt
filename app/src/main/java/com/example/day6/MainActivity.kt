@@ -89,6 +89,7 @@ package com.example.day6
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Button
@@ -100,6 +101,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import kotlin.random.Random
 
@@ -122,7 +124,11 @@ class MainActivity : ComponentActivity() {
         val direction = remember { mutableStateOf("north") }
         val stormOrTreasure = remember { mutableStateOf("") } // ✅ new variable
 
-        Column {
+        Column ( modifier = Modifier.fillMaxSize(),
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ){
+
             Text(text = "Treasures found: ${hunt}")
             Text(text = "Direction: ${direction.value}")
             Text(text = stormOrTreasure.value) // ✅ show feedback
@@ -179,5 +185,6 @@ class MainActivity : ComponentActivity() {
                 Text(text = "Sail South")
             }
         }
+
     }
 }
